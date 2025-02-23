@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Infos - Acqua Roleplay</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f2b38;
+            color: white;
+            text-align: center;
+        }
+
+        .top-bar {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            background-color: #00c8c8;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .nav-bar {
+            background-color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .nav-button {
+            background-color: #00c8c8;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .content {
+            display: none;
+            background-color: #003344;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .auto-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .auto-card {
+            background-color: #00222b;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .auto-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <span>Coins können nur bei Scennzzz erworben werden</span>
+        <div>
+            <a href="https://discord.gg/acquaroleplay" target="_blank">Discord</a>
+            <a href="https://sites.google.com/view/acquaroleplay" target="_blank">Regelwerk</a>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <div class="nav-bar">
+        <button class="nav-button" onclick="showTab('tab-1')">Willkommen</button>
+        <button class="nav-button" onclick="showTab('tab-2')">Coins</button>
+        <button class="nav-button" onclick="showTab('tab-3')">Autos</button>
+        <button class="nav-button" onclick="showTab('tab-4')">Soon</button>
+    </div>
+
+    <!-- WILLKOMMEN -->
+    <div id="tab-1" class="content active">
+        <h2>Willkommen</h2>
+        <p>Willkommen beim VIP Händler von Acqua Roleplay!</p>
+        <p>Hier gibt es eine kleine Vorstellung der Angebote, die ihr bei Scennzzz kaufen könnt.</p>
+        <p>Das gesamte Geld wird für neue Scripts & Community-Wünsche genutzt.</p>
+        <h3>Vorteile für Unterstützer:</h3>
+        <ul>
+            <li>✅ VIP Warteraum (Wird zuerst bearbeitet)</li>
+            <li>✅ VIP Ticket Support (Schnellere Bearbeitung)</li>
+            <li>✅ EXTRA Ticket Rolle (Wird rechts angezeigt)</li>
+        </ul>
+    </div>
+
+    <!-- COINS -->
+    <div id="tab-2" class="content">
+        <h2>Coins</h2>
+        <p>1 Coin = 15 Cent</p>
+        <p>50 Coins = 6.99€</p>
+        <p>100 Coins = 13.00€</p>
+    </div>
+
+    <!-- AUTOS -->
+    <div id="tab-3" class="content">
+        <h2>Autos</h2>
+        <div class="auto-container">
+            <div class="auto-card">
+                <h3>Porsche Cayenne 2019 VIP (25 Coins)</h3>
+                <img src="img/cayenne_vorne.png" alt="Porsche Cayenne vorne">
+                <img src="img/cayenne_hinten.pnf" alt="Porsche Cayenne hinten">
+            </div>
+
+            <div class="auto-card">
+                <h3>Koenigsegg Jesko VIP (50 Coins)</h3>
+                <img src="img/Koenigsegg_vorne.png" alt="Koenigsegg vorne">
+                <img src="img/Koenigsegg_hinten.png" alt="Koenigsegg hinten">
+            </div>
+
+            <div class="auto-card">
+                <h3>Honda NSX 2017 VIP (50 Coins)</h3>
+                <img src="img/Honda_vorne.png" alt="Honda vorne">
+                <img src="img/Honda_hinten.png" alt="Honda hinten">
+            </div>
+
+            <div class="auto-card">
+                <h3>Bugatti Chiron Breitbau (100 Coins)</h3>
+                <img src="img/chironspeedhunter_vorne.png" alt="Chiron vorne">
+            </div>
+
+            <div class="auto-card">
+                <h3>Bentley Bentayga (75 Coins)</h3>
+                <img src="img/bentaygam_vone.png" alt="Bentley vorne">
+                <img src="img/bentaygam_hinten.png" alt="Bentley hinten">
+            </div>
+
+            <div class="auto-card">
+                <h3>Corvette C8 (75 Coins)</h3>
+                <img src="img/c8_vone.png" alt="Corvette vorne">
+                <img src="img/c8_hinten.png" alt="Corvette hinten">
+            </div>
+
+            <div class="auto-card">
+                <h3>Chevrolet Camaro ZL1 (50 Coins)</h3>
+                <img src="img/rmodzl1_vorne.png" alt="Camaro vorne">
+                <img src="img/rmodzl1_hinten.png" alt="Camaro hinten">
+            </div>
+        </div>
+    </div>
+
+    <!-- SOON -->
+    <div id="tab-4" class="content">
+        <h2>Soon</h2>
+        <p><strong>Bald</strong></p>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
